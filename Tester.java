@@ -7,10 +7,13 @@ package linkedListDataStructure;
 public class Tester {
 
 	public static void main(String[] args) {
-		LinkedList2<Integer> list = new LinkedList2<>();
+		DoublyLinkedList<Integer> list = new DoublyLinkedList<>();
 		for(int i = 0; i < 12; i++) {
-			list.addFirst(i);
+			list.addLast(i);
 		 }
+		list.remove(0);
+		System.out.println(list.currentSize);
+		
 		
 	
 	
